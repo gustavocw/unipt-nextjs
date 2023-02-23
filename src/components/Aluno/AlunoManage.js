@@ -48,7 +48,7 @@ const AlunoManager = ({ Aluno = {}, isOpen, onClose }) => {
     // upsertAluno(Aluno)
     //   .then(() =>
     //     showtoast({
-    //       description: `Alunoshop ${
+    //       description: `Aluno ${
     //         Aluno?.id ? "alterado" : "adicionado"
     //       } com sucesso!`,
     //     })
