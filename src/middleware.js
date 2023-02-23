@@ -7,7 +7,7 @@ export function middleware(req) {
     return NextResponse.redirect(url);
   }
   if (req.nextUrl.pathname.startsWith("/admin")) {
-    return NextResponse.rewrite(new URL("/admin/alunos", req.url));
+    return NextResponse.rewrite(new URL("/admin/professores", req.url));
   }
   return NextResponse.next();
 }
