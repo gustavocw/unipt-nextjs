@@ -120,55 +120,55 @@ const Dados = ({ register, errors }) => {
         <Input
           {...register("nome_completo", { required: "Campo Obrigatório." })}
         />
-        <FormLabel>nome_completo</FormLabel>
+        <FormLabel>Nome completo</FormLabel>
         <FormErrorMessage>
           {errors.nome_completo?.message}
         </FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.email}>
         <Input {...register("email", { required: "Campo Obrigatório." })} />
-        <FormLabel>email</FormLabel>
+        <FormLabel>Email</FormLabel>
         <FormErrorMessage>{errors.email?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.nif}>
         <Input {...register("nif", { required: "Campo Obrigatório." })} />
-        <FormLabel>nif</FormLabel>
+        <FormLabel>NIF</FormLabel>
         <FormErrorMessage>{errors.nif?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.nascimento}>
         <Input
           {...register("nascimento", { required: "Campo Obrigatório." })}
         />
-        <FormLabel>nascimento</FormLabel>
+        <FormLabel>Nascimento</FormLabel>
         <FormErrorMessage>{errors.nascimento?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.cp}>
         <Input {...register("cp", { required: "Campo Obrigatório." })} />
-        <FormLabel>cp</FormLabel>
+        <FormLabel>Código Postal</FormLabel>
         <FormErrorMessage>{errors.cp?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.endereco}>
         <Input {...register("endereco", { required: "Campo Obrigatório." })} />
-        <FormLabel>endereco</FormLabel>
+        <FormLabel>Endereço</FormLabel>
         <FormErrorMessage>{errors.endereco?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.horas_trabalhadas}>
         <Input
           {...register("horas_trabalhadas", { required: "Campo Obrigatório." })}
         />
-        <FormLabel>horas_trabalhadas</FormLabel>
+        <FormLabel>Horas trabalhadas</FormLabel>
         <FormErrorMessage>
           {errors.horas_trabalhadas?.message}
         </FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.pagamento}>
         <Input {...register("pagamento", { required: "Campo Obrigatório." })} />
-        <FormLabel>pagamento</FormLabel>
+        <FormLabel>Tipo de Pagamento</FormLabel>
         <FormErrorMessage>{errors.pagamento?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.conta}>
         <Input {...register("conta", { required: "Campo Obrigatório." })} />
-        <FormLabel>conta</FormLabel>
+        <FormLabel>Conta Bancária</FormLabel>
         <FormErrorMessage>{errors.conta?.message}</FormErrorMessage>{" "}
       </FormControl>
     </Stack>

@@ -54,7 +54,7 @@ const AlunoList = () => {
 
   const handleDeleteConfirmFn = () => {
     // deleteAluno(Aluno.id)
-    //   .then((e) => showToast({ description: "Alunoshop Excluído" }))
+    //   .then((e) => showToast({ description: "Aluno Excluído" }))
     //   .catch((e) => {
     //     console.log(e);
     //     showToast({
@@ -107,9 +107,9 @@ const AlunoList = () => {
         {isOpenDelete && (
           <CustomAlertDialog
             isOpen={isOpenDelete}
-            title={"Excluir Alunoshop"}
+            title={"Excluir Aluno"}
             body={
-              "Tem certeza de que deseja excluir o Alunoshop \n\n" +
+              "Tem certeza de que deseja excluir o Aluno \n\n" +
               Aluno?.nome +
               "?"
             }

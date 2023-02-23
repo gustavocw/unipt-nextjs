@@ -47,7 +47,7 @@ const ProfessoreList = () => {
   const defaultPageSize = 10;
 
   useEffect(() => {
-    ProfessoresSubscribe({ setProfessores });
+    // ProfessoresSubscribe({ setProfessores });
   }, []);
 
   const handleEditClickFn = (Professore) => {

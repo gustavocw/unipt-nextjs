@@ -6,7 +6,10 @@ export function middleware(req) {
     url.pathname = "/admin/alunos";
     return NextResponse.redirect(url);
   }
-  if (req.nextUrl.pathname.startsWith("/admin")) {
+  else if (url.pathname.startsWith("/admin/alunos")) {
+    return NextResponse.rewrite(new URL("/admin/alunos", req.url));
+  }
+  else if (url.pathname.startsWith("/admin/professores")) {
     return NextResponse.rewrite(new URL("/admin/professores", req.url));
   }
   return NextResponse.next();

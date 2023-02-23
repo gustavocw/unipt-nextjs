@@ -69,7 +69,7 @@ const AlunoManager = ({ Aluno = {}, isOpen, onClose }) => {
     <Modal onClose={onClose} size={"2xl"} isOpen={isOpen}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>{Aluno ? "Editar" : "Novo"} Alunoshop</ModalHeader>
+        <ModalHeader>{Aluno ? "Editar" : "Novo"} Aluno</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <Box bg="white" p={10} borderRadius="5px" shadow="base" flex={1}>
@@ -122,63 +122,63 @@ const Dados = ({ register, errors }) => {
         <Input
           {...register("nome_completo", { required: "Campo Obrigatório." })}
         />
-        <FormLabel>nome_completo</FormLabel>
+        <FormLabel>Nome Completo</FormLabel>
         <FormErrorMessage>
           {errors.nome_completo?.message}
         </FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.email}>
         <Input {...register("email", { required: "Campo Obrigatório." })} />
-        <FormLabel>email</FormLabel>
+        <FormLabel>Email</FormLabel>
         <FormErrorMessage>{errors.email?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.nif}>
         <Input {...register("nif", { required: "Campo Obrigatório." })} />
-        <FormLabel>nif</FormLabel>
+        <FormLabel>NIF</FormLabel>
         <FormErrorMessage>{errors.nif?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.cp}>
         <Input {...register("cp", { required: "Campo Obrigatório." })} />
-        <FormLabel>cp</FormLabel>
+        <FormLabel>Código Postal</FormLabel>
         <FormErrorMessage>{errors.cp?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.matricula}>
         <Input {...register("matricula", { required: "Campo Obrigatório." })} />
-        <FormLabel>matricula</FormLabel>
+        <FormLabel>Matrícula</FormLabel>
         <FormErrorMessage>{errors.matricula?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.cidade}>
         <Input {...register("cidade", { required: "Campo Obrigatório." })} />
-        <FormLabel>cidade</FormLabel>
+        <FormLabel>Cidade</FormLabel>
         <FormErrorMessage>{errors.cidade?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.rua}>
         <Input {...register("rua", { required: "Campo Obrigatório." })} />
-        <FormLabel>rua</FormLabel>
+        <FormLabel>Rua</FormLabel>
         <FormErrorMessage>{errors.rua?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.complemento}>
         <Input
           {...register("complemento", { required: "Campo Obrigatório." })}
         />
-        <FormLabel>complemento</FormLabel>
+        <FormLabel>Complemento</FormLabel>
         <FormErrorMessage>{errors.complemento?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.nascimento}>
         <Input
           {...register("nascimento", { required: "Campo Obrigatório." })}
         />
-        <FormLabel>nascimento</FormLabel>
+        <FormLabel>Nascimento</FormLabel>
         <FormErrorMessage>{errors.nascimento?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.nome_pai}>
         <Input {...register("nome_pai", { required: "Campo Obrigatório." })} />
-        <FormLabel>nome_pai</FormLabel>
+        <FormLabel>Projenitor 1</FormLabel>
         <FormErrorMessage>{errors.nome_pai?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.nome_mae}>
         <Input {...register("nome_mae", { required: "Campo Obrigatório." })} />
-        <FormLabel>nome_mae</FormLabel>
+        <FormLabel>Projenitor 2</FormLabel>
         <FormErrorMessage>{errors.nome_mae?.message}</FormErrorMessage>{" "}
       </FormControl>
       <FormControl isInvalid={errors.entidade_de_conclusao}>
@@ -187,7 +187,7 @@ const Dados = ({ register, errors }) => {
             required: "Campo Obrigatório.",
           })}
         />
-        <FormLabel>entidade_de_conclusao</FormLabel>
+        <FormLabel>Última entidade de ensino</FormLabel>
         <FormErrorMessage>
           {errors.entidade_de_conclusao?.message}
         </FormErrorMessage>{" "}
@@ -196,7 +196,7 @@ const Dados = ({ register, errors }) => {
         <Input
           {...register("observacao", { required: "Campo Obrigatório." })}
         />
-        <FormLabel>observacao</FormLabel>
+        <FormLabel>Observações</FormLabel>
         <FormErrorMessage>{errors.observacao?.message}</FormErrorMessage>{" "}
       </FormControl>
     </Stack>
